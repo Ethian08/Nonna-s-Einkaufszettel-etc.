@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochkurs bei Nonna</title>
+    <meta name="description" content="Nonna bietet euch einen Kochkurs>
+    <meta name="keywords" content="mittagstisch, essen, mahlzeit, kochen, kochkurs, community">
+    <meta name="author" content="Ethian">
+    <style>
+        table, th, td {border: 1px solid black; border-collapse: padding 4px}
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <h1>Kochkurs bei Nonna</h1>
+        <nav>
+            <ul>
+                <li><a href="einkaufszettel.html">Einkaufszettel</a></li>
+                <li><a href="pizzateig.html">Pizzateig</a></li>
+                <li><a href="mittagstisch.html">Mittagstisch</a></li>
+                <li><a href="rezeptkarte.html">Rezeptkarte</a></li>
+            </ul>
+    </nav>
+    </header>
+ 
+<main>
+        <p>
+            Lerne bei Nonna Rosa, wie man echte italienische
+            Pasta macht. Die Plätze sind begrenzt!
+        </p>
+ 
+        <form action="#" method="post">
+ 
+            <fieldset>
+                <legend>Deine Daten</legend>
+ 
+                <label for="vorname">Vorname *</label>
+                <input type="text" id="vorname" name="vorname" required><br><br>
+ 
+                <label for="nachname">Nachname *</label>
+                <input type="text" id="nachname" name="nachname" required><br><br>
+ 
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required><br><br>
+ 
+                <label for="geburtsdatum">Geburtsdatum</label>
+                <input type="date" id="geburtsdatum" name="geburtsdatum" required>
+            </fieldset>
+ 
+            <fieldset>
+                <legend>Dein Kurs</legend>
+                <label for="kurs">Kurs</label>
+                <select name="kurs" id="kurs" required>kurs
+                    <option value="pasta">frische Pasta (3 Stunden)</option>
+                    <option value="pizza">Pizza backen</option>
+                    <option value="desserts">Italienische Desserts</option>
+                </select><br><br>
+ 
+                <label for="wunschtermin">Wunschtermin</label>
+                <input type="date" name="wunschtermin" id="wunschtermin" placeholder="TT.mm.jjjj" required>
+                <label for="uhrzeit">um</label>
+                <input type="time" name="uhrzeit" id="uhrzeit" value="17:00" required><br><br>
+ 
+                <label for="personen">Personen</label>
+                <input type="number" id="personen" name="personen" min="1" max="10" value="1" required><br><br>
+ 
+                <label for="erfahrung">Erfahrung:</label>
+                <input type="radio" id="anfaenger" name="erfahrung" value="anfaenger" checked>
+                <label for="anfaenger">Anfänger</label>
+ 
+                <input type="radio" id="fortgeschritten" name="erfahrung" value="fortgeschritten" >
+                <label for="fortgeschritten">Fortgeschritten</label>
+ 
+                <input type="radio" id="ich koche besser als nonna" name="erfahrung">
+                <label for="ich koche besser als nonna"> Ich koche besser als Nonna</label>
+ 
+ 
+ 
+            </fieldset>
+ 
+            <fieldset>
+                <legend>Extras</legend>
+                <input type="checkbox" id="schürze ausleihen" name="schürze ausleihen">
+                <label for="schürze ausleihen">Schürze ausleihen <b>(2$)</b></label><br>
+ 
+                <input type="checkbox" id="rezeptheft" name="rezeptheft">
+                <label for="rezeptheft">Rezeptheft zum Mitnehmen <b>(5$)</b></label><br>
+ 
+                <input type="checkbox" id="vegan" name="vegan">
+                <label for="vegan">Ich esse vegan</label><br><br>
+ 
+                <label for="allergien oder wünsche">Allergien oder Wünsche</label><br>
+                <textarea name="allergien oder wünsche" id="allergien oder wünsche" placeholder="Allergien/Wünsche" cols="40" rows="4"></textarea><br>
+ 
+            </fieldset>
+        <br>
+        <button type="submit">Verbindlich anmelden</button><button type="reset">Zurücksetzen</button>
+        </form>
+</main>
+ 
+    <footer>
+        <p>&copy; 2026 Nonna Rosa · Brooklyn, New York</p>
+    </footer>
+ 
+</body>
+</html>
+ 
+ 
